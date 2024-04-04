@@ -88,9 +88,24 @@ git reset HEAD es un comando que te permite revertir los cambios que ya habías 
 #### GIT CHECKOUT  #commit ARCHIVO
 Nos permite volver  a la versión anterior del archivo.
 
-
 #### GIT CHECKOUT  master ARCHIVO
 Nos permite volver  a la versión actual.
+
+#### GIT CLONE URL
+Nos permite descargar una versión del repositorio remoto a nuestra área Local.
+
+#### GIT PULL
+Nos permite rápidamente traer todos los cambios del repositorio remoto a nuestro repositorio Local.
+
+#### GIT PUSH
+Nos permite enviar los cambios del repositorio Local al repositorio remoto.
+
+#### GIT FETCH
+Nos permite actualizar los cambios de un repositorio remoto a nuestro repositorio Local.
+
+#### GIT MERGE
+Nos permite combinar los cambios del servidor remoto con nuestro directorio local.
+
 
 
 
