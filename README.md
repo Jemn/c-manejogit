@@ -68,7 +68,6 @@ El comando git reset es una herramienta poderosa que te permite deshacer o rever
 
 #### GIT RESET
 
-
 ##### git reset --soft: 
 Borra el historial y los registros de Git de commits anteriores, pero guarda los cambios en Staging para aplicar las últimas actualizaciones a un nuevo commit.
 
@@ -81,6 +80,7 @@ Borra todo, exactamente todo. Toda la información de los commits y del área de
 ##### git reset HEAD: 
 El comando git reset saca archivos del área de staging sin borrarlos ni realizar otras acciones. Esto impide que los últimos cambios en estos archivos se envíen al último commit. Podemos incluirlos de nuevo en staging con git add si cambiamos de opinión.
 
+![img_2.png](img_2.png)
 
 #### GIT RESET HEAD
 git reset HEAD es un comando que te permite revertir los cambios que ya habías preparado para subir, y moverlos de vuelta a tu proyecto. Con este comando puedes cancelar los cambios que ya habías agregado, para que puedas revisarlos, modificarlos o deshacerlos antes de confirmarlos con un commit.
@@ -91,6 +91,8 @@ Nos permite volver  a la versión anterior del archivo.
 
 #### GIT CHECKOUT  master ARCHIVO
 Nos permite volver  a la versión actual.
+
+
 
 
 
