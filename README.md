@@ -23,6 +23,9 @@ Muestra todos los cambios que hemos hecho a los archivos.
 ### GIT LOG.
 Muestra el historial de cambios completos.
 
+### GIT LOG --STAT
+Muestra el historial pero con la cantidad de archivos modificados.
+
 ### GIT CONFIG --LIST
 Muestra la lista de configuraciones.
 
@@ -45,6 +48,23 @@ O si lo deseas eliminar y añadir uno nuevo
 Elimina el nombre del usuario
 #### git config --global --add user.name 
 “Aquí va tu nombre”
+
+### Que es Staging ?
+
+El staging es el lugar donde se guardan temporalmente los cambios, para luego ser llevados definitivamente al repositorio. El repositorio es el lugar donde se guardan todos los registros de los cambios realizados a los archivos.
+![img_1.png](img_1.png)
+
+![img.png](img.png)
+
+#### GIT RESET   #commit - - SOFT
+
+Nos permite volver a la versión de un commit indicado. Vuelve a la versión anterior en el directorio , pero sin borrar los commit usados anteriormente, es decir el staging se mantiene.
+
+#### GIT RESET  #commit - - HARD
+Nos permite volver a la versión de un commit indicado. Vuelve a la versión anterior en el directorio , borrando todos los commit usados anteriormente, es decir se eliminan los commit del directorio y staging .
+
+
+
 
 
 
