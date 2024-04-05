@@ -21,8 +21,8 @@ public class ClasesManejogitApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		//FluxString();
-		FluxList();
+		FluxString();
+		//FluxList();
 	}
 
 	private void FluxString(){
@@ -36,11 +36,9 @@ public class ClasesManejogitApplication implements CommandLineRunner {
 					return usu;
 				})
 				.subscribe(sus -> log.info(sus.getNombre()));
-
 	}
 
 	private void FluxList(){
-
 		List<String> usuarioList = new ArrayList<>();
 		usuarioList.add("Juan Valde");
 		usuarioList.add("Maria Rivera");
@@ -49,8 +47,6 @@ public class ClasesManejogitApplication implements CommandLineRunner {
 		usuarioList.add("Mirian Maren");
 
 		Flux<String> name = Flux.fromIterable(usuarioList);
-
-
 
 		//Flux<String> name = Flux.just("Juan Valde", "Maria Rivera", "Luis Vento", "Mirian Rosa", "Mirian Maren");
 
@@ -62,13 +58,11 @@ public class ClasesManejogitApplication implements CommandLineRunner {
 					return usu;
 				});
 
-
 		names.subscribe(sus -> log.info(sus.getNombre()), error -> log.error(error.getMessage()), new Runnable() {
 			@Override
 			public void run() {
 				System.out.println("todo a terminado");
 			}
 		});
-
 	}
 }
