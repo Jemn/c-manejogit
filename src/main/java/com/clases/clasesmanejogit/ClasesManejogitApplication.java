@@ -24,21 +24,14 @@ public class ClasesManejogitApplication implements CommandLineRunner {
 	private void FluxString(){
 		Flux<String> name = Flux.just("Juan Valde", "Maria Rivera", "Luis Vento", "Mirian Rosa", "Mirian Maren");
 
-		Flux<Usuario> names = name.map(usuario -> new Usuario(usuario.split(" ")[0].toLowerCase(), usuario.split(" ")[1].toLowerCase()))
+		        name.map(usuario -> new Usuario(usuario.split(" ")[0].toLowerCase(), usuario.split(" ")[1].toLowerCase()))
 				.filter(usuario -> usuario.getNombre().toLowerCase().equalsIgnoreCase("mirian"))
 				.map(usu ->{
 					String nombre = usu.getNombre();
 					usu.setNombre(nombre);
 					return usu;
-				});
-
-
-		names.subscribe(sus -> log.info(sus.getNombre()), error -> log.error(error.getMessage()), new Runnable() {
-			@Override
-			public void run() {
-				System.out.println("todo a terminado");
-			}
-		});
+				})
+				.subscribe(sus -> log.info(sus.getNombre()));
 
 	}
 }
