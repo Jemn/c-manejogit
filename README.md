@@ -35,18 +35,18 @@ para mostrar las configuraciones y sus ruta
 ### CONFIG –GLOBAL
 Se configura el usuario que hará los cambios.
 
-#### git config --global user.email "tu@email.com"
-#### git config --global user.name "Tu Nombre
+* git config --global user.email "tu@email.com"
+* git config --global user.name "Tu Nombre
 
-Si por algún motivo te equivocaste en el nombre o email que configuraste al principio, lo puedes modificar de la siguiente manera:
+* Si por algún motivo te equivocaste en el nombre o email que configuraste al principio, lo puedes modificar de la siguiente manera:
 
-#### git config --global --replace-all user.name 
-“Aquí va tu nombre modificado”
-O si lo deseas eliminar y añadir uno nuevo
+* git config --global --replace-all user.name 
+* “Aquí va tu nombre modificado”
+* O si lo deseas eliminar y añadir uno nuevo
 
-#### git config --global --unset-all user.name
+* git config --global --unset-all user.name
 Elimina el nombre del usuario
-#### git config --global --add user.name 
+* git config --global --add user.name 
 “Aquí va tu nombre”
 
 ### Que es Staging ?
@@ -68,16 +68,16 @@ El comando git reset es una herramienta poderosa que te permite deshacer o rever
 
 #### GIT RESET
 
-##### git reset --soft: 
+* git reset --soft: 
 Borra el historial y los registros de Git de commits anteriores, pero guarda los cambios en Staging para aplicar las últimas actualizaciones a un nuevo commit.
 
-##### git reset --hard: 
+* git reset --hard: 
 Deshace todo, absolutamente todo. Toda la información de los commits y del área de staging se elimina del historial.
 
-##### git reset --mixed: 
+* git reset --mixed: 
 Borra todo, exactamente todo. Toda la información de los commits y del área de staging se elimina del historial.
 
-##### git reset HEAD: 
+* git reset HEAD: 
 El comando git reset saca archivos del área de staging sin borrarlos ni realizar otras acciones. Esto impide que los últimos cambios en estos archivos se envíen al último commit. Podemos incluirlos de nuevo en staging con git add si cambiamos de opinión.
 
 ![img_2.png](img_2.png)
@@ -105,6 +105,68 @@ Nos permite actualizar los cambios de un repositorio remoto a nuestro repositori
 
 #### GIT MERGE
 Nos permite combinar los cambios del servidor remoto con nuestro directorio local.
+
+
+![img_3.png](img_3.png)
+
+#### GIT BRANCH NombreBranch
+Este comando nos permite crear una nueva rama a partir de la version seleccionada.
+
+
+#### GIT CHECKOUT NombreBranch
+Este comando nos permite cambiar de rama y hacer que nuestro HEAD apunte a la rama nombrada.
+
+
+#### GIT MERGE NombreBranch
+Este comando nos permite fusionar dos ramas
+
+
+#### LLAVES PUBLICAS Y PRIVADAS
+Las llaves públicas y privadas, conocidas también como cifrado asimétrico de un solo camino, sirven para mandar mensajes privados entre varios nodos con la lógica de que firmas tu mensaje con una llave pública vinculada con una llave privada que puede leer el mensaje
+
+![img_4.png](img_4.png)
+
+#### GIT REMOTE ADD ORIGIN [URL]
+Este comando nos permite enviar nuestro repositorio local a un repositorio específico.
+
+podemos validar con el comando remote -v es estado.
+
+En caso no se pueda descargar las fuentes al utilizar un pull, podemos forzar de la siguiente manera:
+
+* git pull origin main --allow-unrelated-histories
+
+
+
+#### CREAR UN REPO DESDE LINEA DE COMNADOS
+
+* echo "# PRUEBAAA" >> README.md
+* git init
+* git add README.md
+* git commit -m "first commit"
+* git branch -M main
+* git remote add origin https://github.com/Jemn/PRUEBAAA.git
+* git push -u origin main
+
+#### PUSH A UN REPOS EXISTENTED ESDE LINEA DE COMNADOS
+
+* git remote add origin https://github.com/Jemn/PRUEBAAA.git
+* git branch -M main
+* git push -u origin main
+
+####  COMANDOS LINUX
+
+* PWD - MUESTRA EL DIRECTORIO ACTUAL
+* CD - CAMBIAR DE DIRECTORIO
+* CD .. - RETROCEDE UN DIRECTORIO
+* LS - LISTA ARCHIVOS DEL DIRECTORIO.
+* CLEAR - LIMPIAR CONSOLA
+* MKDIR - CREAR CARPERTA
+* TOUCH vacio.txt
+* CAT - muestra mensaje de un archivo
+* HISTOY - muestra historial de comandos utilizados
+* RM - eliminar archivos.
+* RM –HELP - Muestra ayuda para el comando rm
+
 
 ## AUTHOR
 JULIO EDUARDO MATEO NOREÑA
