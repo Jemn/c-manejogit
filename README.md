@@ -106,18 +106,5 @@ Nos permite actualizar los cambios de un repositorio remoto a nuestro repositori
 #### GIT MERGE
 Nos permite combinar los cambios del servidor remoto con nuestro directorio local.
 
-
-
-
-
-
-
-
-
-
-
 ## AUTHOR
 JULIO EDUARDO MATEO NOREÑA
-
-
-
