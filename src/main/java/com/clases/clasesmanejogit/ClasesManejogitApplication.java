@@ -21,7 +21,7 @@ public class ClasesManejogitApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		//FluxString();
+		FluxString();
 		FluxList();
 	}
 
