@@ -41,6 +41,9 @@ public class ClasesManejogitApplication implements CommandLineRunner {
 				.subscribe(sus -> log.info(sus.getNombre()));
 	}
 
+	/**
+	 * Metodo que me permite crear un flujo de datos con una Lista
+	 */
 	private void FluxList(){
 		List<String> usuarioList = new ArrayList<>();
 		usuarioList.add("Juan Valde");
