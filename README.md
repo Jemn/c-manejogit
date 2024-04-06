@@ -157,6 +157,46 @@ En caso no se pueda descargar las fuentes al utilizar un pull, podemos forzar de
 Rebase es el proceso de mover o combinar una secuencia de confirmaciones en una nueva confirmación base. La reorganización es muy útil y se visualiza fácilmente en el contexto de un flujo de trabajo de ramas de funciones. El proceso general se puede visualizar de la siguiente manera.
 ![img_5.png](img_5.png)
 
+####  GIT STASH
+Te permite almacenar temporalmente (o guardar en un stash), los cambios que hayas efectuado en el código en el que estás trabajando para que puedas trabajar en otra cosa y, más tarde, regresar y volver a aplicar los cambios.
+
+
+* git stash: guarda los cambios temporalmente en memoria cuando no quieres hacer un commit aun
+* git stash save “mensaje”: guarda un stach con mensaje
+* git stash list: muestra la lista de cambios temporales
+* git stash pop: trae de vuelta los cambios que teníamos guardados en el ultimo stash
+* git stash apply stash@{n}: trae el stash que necesites con indicar su número dentro de las llaves
+* git stash drop: borra el último stash
+* git stash clear: borra todos los stash
+* git stash branch nombreBrance : Permite crear una rama a partir de un Stash.
+
+
+#### GIT CLEAN - -DRY -RUN
+Se utiliza para eliminar archivos filtrados en el directorio.  Actúa en archivos sin seguimiento, este tipo de archivos son aquellos que se encuentran en el directorio de trabajo, pero que aún no se han añadido al índice de seguimiento de repositorio con el comando add.
+* git clean --dry-run
+
+
+#### GIT CHERRY-PICK [CODIGO]
+Este comando nos permite traer un commit específico a nuestra rama actual..
+
+* git cherry-pick --abort
+* git cherry-pick codigoComit
+
+
+
+
+#### GIT REFLOG
+Este comando nos permite ver todo el historial oculto del proyecto, con commit o branch creadas o eliminadas. Lo utilizamos para ver el código commit que vamos a regresar al usar un Reset.
+
+* git reflog
+
+
+#### GIT RESET
+Hará que el último commit sea pasado, ya que usaremos una referencia o puntero para posicionar en un Head diferente.
+* git reset --hard eff544f # Perderá todo lo que se encuentra en staging y en el Working directory y se moverá el head al commit eff544f
+* git reset --soft eff544f # Te recuperará todos los cambios que tengas diferentes al commit eff544f, los agrega al staging area y moverá el head al commit eff544f
+
+
 ####  COMANDOS LINUX
 
 * PWD - MUESTRA EL DIRECTORIO ACTUAL
@@ -170,6 +210,8 @@ Rebase es el proceso de mover o combinar una secuencia de confirmaciones en una 
 * HISTOY - muestra historial de comandos utilizados
 * RM - eliminar archivos.
 * RM –HELP - Muestra ayuda para el comando rm
+
+
 
 
 ## AUTHOR
