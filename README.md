@@ -214,6 +214,29 @@ Modificar el commit sin modificar el mensaje de dicho commit.
 
 El indicador --no-edit permite hacer correcciones en el código sin modificar el mensaje original.
 
+#### GIT GREP
+
+
+Comando para hacer busca de palabras en el repositorio.
+
+
+git grep Flux: Busca en los archivos la palabra Flux.
+git grep -n Flux : Busca en los archivos la palabra Flux pero te muestra la línea de código.
+git grep -c Flux: Indica cuantas veces encontrará la palabra Flux en cada Archivo.
+
+#### COMANDOS COLABORATIVOS
+Para saber cómo usar un comando utilizar git blame nombrecomnado: Ejemplo: “git blame –help”
+y abrirá la web con el manual de uso del comando.
+
+
+* git shortlog -sn = muestra cuántos commit han hecho cada miembros del equipo.
+* git shortlog -sn --all = muestra cuántos commit han hecho cada miembros del equipo hasta los que han sido eliminado
+* git shortlog -sn --all --no-merge = muestra cuántos commit han hecho cada miembros quitando los eliminados sin los merges
+* git blame ARCHIVO = muestra quién hizo cada cosa linea por linea
+* git COMANDO --help = muestra cómo funciona el comando.
+* git blame ARCHIVO -L35,70l= muestra quién hizo cada cosa linea por linea indicando desde que linea ver ejemplo -L35,50
+* git branch -r = se muestran todas las ramas remotas
+* git branch -a = se muestran todas las ramas tanto locales como remotas
 
 ####  COMANDOS LINUX
 
