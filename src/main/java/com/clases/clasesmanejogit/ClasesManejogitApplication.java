@@ -25,6 +25,9 @@ public class ClasesManejogitApplication implements CommandLineRunner {
 		FluxList();
 	}
 
+	/**
+	 * Metodo que me permite crear un flujo de datos con String
+	 */
 	private void FluxString(){
 		Flux<String> name = Flux.just("Juan Valde", "Maria Rivera", "Luis Vento", "Mirian Rosa", "Mirian Maren");
 
