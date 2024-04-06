@@ -153,6 +153,10 @@ En caso no se pueda descargar las fuentes al utilizar un pull, podemos forzar de
 * git branch -M main
 * git push -u origin main
 
+####  GIT REBASE
+Rebase es el proceso de mover o combinar una secuencia de confirmaciones en una nueva confirmación base. La reorganización es muy útil y se visualiza fácilmente en el contexto de un flujo de trabajo de ramas de funciones. El proceso general se puede visualizar de la siguiente manera.
+![img_5.png](img_5.png)
+
 ####  COMANDOS LINUX
 
 * PWD - MUESTRA EL DIRECTORIO ACTUAL
