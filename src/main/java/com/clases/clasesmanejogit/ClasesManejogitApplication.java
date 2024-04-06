@@ -49,6 +49,9 @@ public class ClasesManejogitApplication implements CommandLineRunner {
 
 	}
 
+	/**
+	 * Metodo que me permite crear un flujo de datos con una Lista
+	 */
 	private void FluxList(){
 
 		List<String> usuarioList = new ArrayList<>();
