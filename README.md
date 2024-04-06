@@ -196,6 +196,24 @@ Hará que el último commit sea pasado, ya que usaremos una referencia o puntero
 * git reset --hard eff544f # Perderá todo lo que se encuentra en staging y en el Working directory y se moverá el head al commit eff544f
 * git reset --soft eff544f # Te recuperará todos los cambios que tengas diferentes al commit eff544f, los agrega al staging area y moverá el head al commit eff544f
 
+#### GIT COMMIT - -AMEND
+
+El comando de git amend se usa para modificar el último commit. Es decir, te permite “revisar” o “corregir” el último cambio confirmado que hayas hecho en tu proyecto. Es una forma que tienes para hacer cambios a tu commit más recientes sin tener que hacer un nuevo commit.
+
+Se ejecuta de la siguiente manera:
+
+Modificar el mensaje del commit más reciente.
+* $ git commit --amend
+
+Modificar el commit más reciente y su mensaje en la misma línea.
+* $ git commit --amend -m
+
+Recordar que -m permite escribir un mensaje desde la línea de comandos sin tener que abrir un editor.
+Modificar el commit sin modificar el mensaje de dicho commit.
+* $ git commit --amend --no-edit
+
+El indicador --no-edit permite hacer correcciones en el código sin modificar el mensaje original.
+
 
 ####  COMANDOS LINUX
 
